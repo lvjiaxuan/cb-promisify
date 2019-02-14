@@ -1,0 +1,8 @@
+{
+  "name": "promisify",
+  "version": "1.0.0",
+  "description": "Turn callbacks into a promise",
+  "main": "index.js",
+  "author": "lvjixuan",
+  "license": "MIT"
+}
