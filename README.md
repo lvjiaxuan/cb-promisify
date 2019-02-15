@@ -1,4 +1,4 @@
-# Promisify
+# cb-promisify
 
 将回调函数转换为promise的形式
 
