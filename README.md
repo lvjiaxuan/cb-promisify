@@ -5,11 +5,9 @@
 ## 示例
 
 ```javascript
-const fsReaddirPro = promisify(fs.readdir);
+const readdir = promisify(fs.readdir);
 
 fsReaddirPro(workplace + 'images/')
-.then(rs => {
-  const [err, files] = rs;
-  console.log(rs);
-})
+  .then(res => console.log(res))
+  .catch(err => console.log(err))
 ```

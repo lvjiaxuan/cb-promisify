@@ -1,6 +1,6 @@
 {
   "name": "cb-promisify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn callbacks into a promise",
   "main": "index.js",
   "repository": "https://gitee.com/lvjiaxuan/promisify.git",
