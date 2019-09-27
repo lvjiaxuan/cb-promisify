@@ -1,20 +1,20 @@
-const promisify = (fn, ctx, node = true) => {
-
+const promisify = (fn, node = true) => {
   return function () {
-
-    const args = [...arguments];
-    if(!ctx) ctx = this;
-
     return new Promise((resolve, reject) => {
+      const args = [ ...arguments ];
       args.push((..._args) => {
         if(node) {
-          if(_args[0]) reject(_args[0]);
-          else resolve(_args.pop());
+          if(_args[0]) {
+            reject(_args[0]);
+          } else {
+            _args.shift();
+            resolve(_args);
+          }
         } else {
           resolve(_args);
         }
       });
-      fn.apply(ctx, args);
+      fn.apply(null, args);
     });
   }
 }

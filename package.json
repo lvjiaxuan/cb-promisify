@@ -1,10 +1,16 @@
 {
   "name": "cb-promisify",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Turn callbacks into a promise",
   "main": "index.js",
   "repository": "https://gitee.com/lvjiaxuan/promisify.git",
-  "keywords": ["callback", "promise"],
+  "keywords": [
+    "callback",
+    "promise"
+  ],
   "author": "lvjixuan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
 }
