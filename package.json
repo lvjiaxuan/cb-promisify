@@ -3,7 +3,10 @@
   "version": "1.0.3",
   "description": "Turn callbacks into a promise",
   "main": "index.js",
-  "repository": "https://gitee.com/lvjiaxuan/promisify.git",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/lvjiaxuan/promisify.git"
+  },
   "keywords": [
     "callback",
     "promise"
