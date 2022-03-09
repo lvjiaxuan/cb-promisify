@@ -1,7 +1,6 @@
 name: CI test
 
-on:
-  push: [master]
+on: [push]
 
 jobs:
   echo_job-a:
